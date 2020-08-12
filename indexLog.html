@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+    <!--FIREBASE-->
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="firebase.js "></script>
+
+    <!--EMAIL-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Sign in</a>
+            <button type="button" class="btn btn-outline-danger">Ana Ozuna</button>
+        </nav>
+
+        <div class="container">
+            <div class="form-group">
+                <br>
+                <label for="">Email address</input>
+                <input id="email2" type="email" placeholder="Enter email" class="form-control form-control-sm">
+                <small id="emailHelp" class="form-text text-muted">To enter your account must be verified. An email was sent to you when you signed up.</small>
+                <br>
+                <label for="">Password</label>
+                <input id="pass2" type="password" placeholder="Enter password" class="form-control form-control-sm">
+                <br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label" for="exampleCheck1">Remenber me</label>
+                </div>
+                <br>
+                <button type="submit " onclick="logIn() " class="btn btn-success my-2 my-sm-0 btn-sm">Log In</button>
+                <button type="submit " class="btn btn-warning my-2 my-sm-0 btn-sm ml-2" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">User registration form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <input id="email" type="email " placeholder="Enter email" class="form-control">
+                    <div class="mt-2"></div>
+                    <input id="pass" type="password " placeholder="Enter password" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">Check your account to see de verification link. Enter a real email.</small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="register() ">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contenido">
+    </div>
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+    <script src="app.js "></script>
+
+    <body>
+
+    </body>
+
+</body>
+
+</html>
